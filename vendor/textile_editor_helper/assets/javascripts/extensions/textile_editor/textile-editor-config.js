@@ -18,5 +18,5 @@ teButtons.push(new TextileEditorButton('ed_block',      'blockquote.png',    'bq
 // -----------------------------------------------------------
 
 teButtons.push(new TextileEditorButtonSeparator(''));
-teButtons.push("<button id=\"ed_link\" onclick=\"new LinkPopup(this);return false;\" accesskey=\"l\" class=\"standard\"><img src=\"/images/textile-editor/link.png\" title=\"Link\" alt=\"Link\" /></button>");
-teButtons.push("<button id=\"ed_img\" onclick=\"new ImagePopup(this);return false;\" accesskey=\"i\" class=\"standard\"><img src=\"/images/textile-editor/image.png\" title=\"Image\" alt=\"Image\" /></button>");
+teButtons.push("<button id=\"ed_link\" onclick=\"new LinkPopup(this);return false;\" accesskey=\"l\" class=\"standard\"><img src=\"/images/extensions/textile_editor/link.png\" title=\"Link\" alt=\"Link\" /></button>");
+teButtons.push("<button id=\"ed_img\" onclick=\"new ImagePopup(this);return false;\" accesskey=\"i\" class=\"standard\"><img src=\"/images/extensions/textile_editor/image.png\" title=\"Image\" alt=\"Image\" /></button>");
