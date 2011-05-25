@@ -3,7 +3,16 @@ namespace :radiant do
     namespace :textile_editor do
       
       import File.dirname(__FILE__) + "/../../vendor/textile_editor_helper/tasks/textile_editor_helper_tasks.rake"
-      
+
+      desc "Install the Textile Editor extension"
+      task :install => [:environment, :update]
+
+      desc "Uninstall the Textile Editor extension"
+      task :uninstall => :environment do
+        asset_dirs = ["images", "javascripts", "stylesheets"]
+        asset_dirs.each { |d| rm_r RAILS_ROOT + "/public/" + d + "/extensions/textile_editor" }
+      end
+
       desc "Runs the migration of the Textile Editor extension"
       task :migrate => :environment do
         require 'radiant/extension_migrator'
