@@ -50,8 +50,8 @@ class TextileEditorHelperTest < Test::Unit::TestCase
   end
   
   def pre_initialize_output(framework)
-    %{<link href="/stylesheets/textile-editor.css" media="screen" rel="stylesheet" type="text/css" />
-      <script src="/javascripts/textile-editor.js" type="text/javascript"></script>
+    %{<link href="/stylesheets/extensions/textile_editor/textile-editor.css" media="screen" rel="stylesheet" type="text/css" />
+      <script src="/javascripts/extensions/textile_editor/textile-editor.js" type="text/javascript"></script>
       <script type="text/javascript">
       } +
       framework_initialize_output(framework)
