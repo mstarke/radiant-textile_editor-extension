@@ -1,9 +1,11 @@
 # Uncomment this if you reference any of your controllers in activate
 require_dependency 'application_controller'
+require "radiant-textile_editor-extension"
 
 class TextileEditorExtension < Radiant::Extension
-  version "2.2"
-  description "Places a toolbar above the textarea when Textile is the current input filter."
+  version RadiantTextileEditorExtension::VERSION
+  description RadiantTextileEditorExtension::DESCRIPTION
+  url RadiantTextileEditorExtension::URL
   
   def activate
     ApplicationController.send :include, TextileEditor::Ext::ApplicationController
