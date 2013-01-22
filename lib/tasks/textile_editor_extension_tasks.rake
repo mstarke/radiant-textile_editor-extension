@@ -2,7 +2,7 @@ namespace :radiant do
   namespace :extensions do
     namespace :textile_editor do
       
-      import File.dirname(__FILE__) + "/../../vendor/textile_editor_helper/tasks/textile_editor_helper_tasks.rake"
+      import "../../vendor/textile_editor_helper/tasks/textile_editor_helper_tasks.rake"
 
       desc "Install the Textile Editor extension"
       task :install => [:environment, :update]
